@@ -14,7 +14,7 @@ registerServiceWorker();
 
 
 
-const testData = {
+const folderList = {
   "id": 1,
   "filename": "All Categories",
   "children": [
@@ -133,7 +133,7 @@ const testData = {
 
 ReactDOM.render(
   <FolderTree
-    data={testData}
+    data={folderList}
   />,
 	document.getElementById('folders')
 )

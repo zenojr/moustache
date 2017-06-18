@@ -3,6 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  constructor() {
+    super();
+
+    this.state = {lista : [{nome:'zeno', sobrenome:'franca'}]};
+
+  }
+
+
   render() {
     return (
   <div className="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
@@ -19,7 +28,21 @@ class App extends Component {
     </div>
   </header>
   <div className="mdl-layout__drawer">
+
     <span className="mdl-layout-title">Moustache GED</span>
+    <tbody>
+    {
+      this.state.lista.map(function(autor){
+        return (
+          <tr>
+            <td>{autor.nome}</td>
+            <td>{autor.sobrenome}</td>
+
+          </tr>
+          );
+        })
+    }
+  </tbody>
     <nav className="mdl-navigation">
       <a className="mdl-navigation__link" href="">Link</a>
       <a className="mdl-navigation__link" href="">Link</a>
@@ -29,7 +52,9 @@ class App extends Component {
   </div>
   <main className="mdl-layout__content">
     <div className="page-content">
-        <div id="folders"></div>
+        <div id="folders">
+
+        </div>
     </div>
   </main>
 </div>
