@@ -14,7 +14,7 @@ class App extends Component {
                for="fixed-header-drawer-exp">
           <i className="material-icons">search</i>
         </label>
-        
+
       </div>
     </div>
   </header>
@@ -29,7 +29,7 @@ class App extends Component {
   </div>
   <main className="mdl-layout__content">
     <div className="page-content">
-
+        <div id="folders"></div>
     </div>
   </main>
 </div>
