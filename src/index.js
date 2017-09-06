@@ -16,15 +16,15 @@ registerServiceWorker();
 
 const folderList = {
   "id": 1,
-  "filename": "All Categories",
+  "filename": "Todas",
   "children": [
     {
       "id": 2,
-      "filename": "For Sale",
+      "filename": "Contabilidade",
       "children": [
         {
           "id": 3,
-          "filename": "Audio & Stereo",
+          "filename": "Documentos",
           "children": [
     {
       "id": 4,

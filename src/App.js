@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+
+import FolderTree from 'react-folder-tree';
+import ReactDOM from 'react-dom';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -53,7 +57,7 @@ class App extends Component {
   <main className="mdl-layout__content">
     <div className="page-content">
         <div id="folders">
-
+          
         </div>
     </div>
   </main>
